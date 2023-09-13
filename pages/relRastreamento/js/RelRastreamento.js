@@ -43,7 +43,7 @@ Cmp.RelRastreamento = function() {
                     }, 
                     {
                         text: 'Data',
-                        field: 'IncidentDate'
+                        field: 'FormattedIncidentDate'
                     }, 
                     {
                         text: 'Vel. Max.',

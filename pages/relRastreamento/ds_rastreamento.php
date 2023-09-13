@@ -16,7 +16,7 @@ if($db->connect()) {
         "SELECT 
             VehiclePlate, 
             EmployeeName, 
-            IncidentDate, 
+            DATE_FORMAT(IncidentDate, '%Y-%m-%d %H:%i:%s') AS FormattedIncidentDate,
             MaxSpeed, 
             RecordedSpeed, 
             CONCAT(ROUND(((RecordedSpeed - MaxSpeed) / MaxSpeed) * 100, 2), '%') AS SpeedDifferencePercentage, 
